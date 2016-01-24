@@ -1,6 +1,6 @@
 //
 //  main.c
-//  FizzBizz
+//  FizzBuzz
 //
 //  Created by Karlo Pagtakhan on 01/04/2016.
 //  Copyright © 2016 AccessIT. All rights reserved.
@@ -10,15 +10,22 @@
 
 int main(int argc, const char * argv[]) {
 
-    //Loop
+    //Loop 100 times
     for (int x=1; x<=100; x++) {
+        
+        //Multiples of 3 and 5
         if( x % 3 == 0 && x % 5 == 0 ){
             printf("FizzBuzz \n");
-        } else if( x % 3 == 0 ){
+        }
+        //Multiples of 3
+        else if( x % 3 == 0 ){
             printf("Fizz \n");
-        } else if (x % 5 == 0) {
+        }
+        //Multiples of 5
+        else if (x % 5 == 0) {
             printf("Buzz \n");
         }
+        //Others
         else {
             printf("%d \n",x);
         }
